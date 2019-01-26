@@ -1,0 +1,142 @@
+{% extends "m_base.html"%}
+{% load static %}
+
+{% block head %}
+  <script src="{% static 'mobile/script/slider.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{% static 'mobile/script/jquery.touchSwipe.min.js' %}"></script>
+  <!-- <script src="main.js"></script> -->
+  <link rel="stylesheet" href="{% static 'mobile/css/style-main.css' %}">
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0">
+  <title>Главная страница</title>
+{% endblock %}
+
+{% block content %}
+        <div class="cadText">
+                <p>Современное</p>
+                <p>обучение CAD</p>
+                <p>системам</p>
+        </div>
+        <div class="progText">
+                <p>Программа обучения подкрепленна</p>
+                <p>опытом преподавателей и реальными</p>
+                <p>проектами</p>
+        </div>
+        <a href="{% url 'pg_page' %}"></a><div class="btn"><button class="buttons">Перейти к программе</button></div></a>
+        <div class="Plan"><p>План обучения</p></div>
+        
+    <div class="sliderWrapper">
+        <div class="wrap-slider">
+            <div class="slider plus-0">
+                <div class="year"><p>1 год</p></div>
+                <div class="year">2 год</div>
+                <div class="year">3 год</div>
+                <div class="year">4 год</div>
+                <div class="year">Выпуск</div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="three">
+                    <div class="saprText">
+                        <p>Грамотный подход к составлению плана обучения</p>
+                        <p>
+                        	Помимо базовых предметов представлены дисциплины, которые станут основой для обучения в последующие года.
+                        </p>
+                    </div>
+                    <div class="saprText">
+                        <p>Углубление в профессию</p>
+                        <p>Основной упор на программирование и 3D-моделирование, углубление в профессию.
+                        </p>
+                    </div>
+                    <div class="saprText">
+                        <p>Работа с проектами</p>
+                        <p>
+                        	Вы научитесь грамотно презентовать проекты и воплощать идеи в жизнь.
+                        </p>
+                    </div>
+                    <div class="saprText">
+                        <p>Подготовка к диплому</p>
+                        <p>
+                        	Часть программы направленна на формирование навыков работы с технической документацией.
+                        </p>
+                    </div>
+                    <div class="saprText">
+                        <p>Выпускная квалификационная работа</p>
+                        <p>
+                        	Студенту предстоит сдача ВКР и прохождение преддипломной практики.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    <div class="icons-wrap">
+        <div class="slider-icons">
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+            <div class="icons">
+                <div сlass="iconItem"><p>Углубление в профессию</p><img src="{% static 'mobile/img/diving-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Знакомство с новым ПО</p><img src="{% static 'mobile/img/computer-mobile.svg' %}" class="imgs"></div>
+                <div сlass="iconItem"><p>Работа с реальными кейсами</p><img src="{% static 'mobile/img/expanded-mobile.svg' %}" class="imgs"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--     <a href="{% url 'pg_page' %}" style="text-decoration: none;">
+        <div class="btn">
+            <button class="buttons">Подробнее</button>
+        </div>
+    </a> -->
+
+    <div class="news"><p>Новости</p></div>
+    <div class="newsItem"><p>Worldskills Russia 2...</p> <img src="{% static 'mobile/img/bitmap-copy-2.png' %}" class="Bitmap-Copy-2"> </div>
+
+    <div class="newsItem"><p>CAD системы буду...</p><img src="{% static 'mobile/img/bitmap.png' %}" class="Bitmap"></div>
+
+    <div class="newsItem"><p>Группа студентов сош...</p><img src="{% static 'mobile/img/print.svg' %}" class="print"></div>
+    <div class="newsItem"><p>Сборная команда...</p></div>
+
+    <div class="partners"><p>Партнеры</p></div>
+    <div class="partIcons">
+        <div class="partIcon1">
+            <img src="{% static 'mobile/img/autodesk.png' %}"
+                    class="Autodesk">
+                </div>
+
+        <div class="partIcon1">
+            <img src="{% static 'mobile/img/ws.png' %}"
+                 class="WS">
+            </div>
+
+        <div class="partIcon1">
+            <img src="{% static 'mobile/img/rosteh.png' %}"
+                class="Rosteh">   
+            </div>
+        <div class="partIcon1">
+            <img src="{% static 'mobile/img/cret.png' %}"
+                 class="CRET"> 
+             </div>
+    </div> 
+{% endblock %}

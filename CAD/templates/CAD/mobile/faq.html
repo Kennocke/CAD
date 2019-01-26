@@ -1,0 +1,85 @@
+{% extends "m_base.html"%}
+{% load static %}
+
+{% block head %}
+  <script src="{% static 'mobile/script/slider.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{% static 'mobile/script/jquery.touchSwipe.min.js' %}"></script>
+<!--   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script> -->
+<!--   <script type="text/javascript">
+	VK.init({apiId: 6810582, onlyWidgets: true});
+  </script>	 -->
+  <link rel="stylesheet" href="{% static 'mobile/css/style-faq.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0">
+  <title>FAQ</title>
+
+{% endblock %}
+
+{% block content %}
+        <div class="cadText">
+                <p>Вопрос-ответ</p>
+        </div>
+        <div class="progText">
+                <p>На этой странице собраны самые</p>
+                <p>популярные вопросы. Однако если</p>
+                <p>вы все еще хотите что-то спросить,</p>
+                <p>вы можете написать нам на почту или</p>
+                <p>использовать обсуждения ниже.</p>
+        </div>
+        <!-- <div class="btn"><button class="buttons">Отправить вопрос</button></div> -->
+        
+        <article>
+        <div class="question">
+            <p>Что такое сапр?</p>
+            <p>Это система автоматизированного проектирования, предназначенная для выполнения проектных работ с применением компьютерной техники, а также позволяющая создавать конструкторскую и технологическую документацию на отдельные изделия, здания и сооружения.</p>
+
+            <p>Что такое проектная деятельность?</p>
+            <p>Один из методов развивающего (личностно-ориентированного) обучения, направленный на выработку самостоятельных исследовательских умений (постановка проблемы, сбор и обработка информации, проведение экспериментов, анализ полученных результатов)</p>
+
+            <p>Сколько длится проектная деятельность?</p>
+            <p>Проектная деятельность ведется студентами с первого курса и до выпуска, что позволяет совмещать теорию и практику.</p>
+
+            <p>Сколько бюджетных и платных мест отведено на очную образовательную программу САПР?</p>
+            <p>60 бюджетных и 15 платных</p>
+
+            <p>Для чего нужен САПР?</p>
+            <p>Для сокращения трудоёмкости проектирования и планирования.</p>
+
+            <p>Какой средний проходной балл ЕГЭ на бюджет?</p>
+            <p>Средний проходной балл начинается от 60.</p>	
+        </div>
+        <!-- Put this div tag to the place, where the Comments block will be -->
+        <div id="vk_comments"></div>
+   <script type="text/javascript">
+  var VK_loader = function() { // загрузчик, который вызывается по событию DOMContentLoaded и добавляет тег script 
+      var oHead = document.getElementsByTagName("head")[0];
+      var oScript= document.createElement("script");
+      oScript.type = "text/javascript";
+      oScript.async = true;
+      oScript.src="http://userapi.com/js/api/openapi.js?160";
+      oHead.appendChild(oScript);        
+      oScript.onload = function() { // а это обработчик, который вызывается тогда, когда скрипт ВКонтакте уже загрузился
+// Тут инициализируем API ВКонтакте и помещаем код виджетов
+        VK.init({apiId: 6810582, onlyWidgets: true});
+        // VK.Widgets.Group("vk_groups", {mode: 0, width: 200, height: 250}, номер_группы); // вывод группы
+        VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"}); // вывод комментариев
+      }
+   };
+   if ( document.addEventListener ) { // вешаем событие для обычных броузеров
+    document.addEventListener("DOMContentLoaded", function(){ 
+// когда событие происходит, удаляем обработчик и вызываем загрузчик
+    document.removeEventListener("DOMContentLoaded", arguments.callee, false); 
+      VK_loader();
+    }, false );
+  } else if ( document.attachEvent ) { 
+// вешаем событие для IE. Он (до 9 версии) не поддерживает DOMContentLoaded, вместо этого используем событие readystatechange
+    document.attachEvent("onreadystatechange", function(){
+    if ( document.readyState === "complete" ) {
+    document.detachEvent( "onreadystatechange", arguments.callee );
+    VK_loader();
+    }
+    });
+  }
+</script> 
+    </article>
+{% endblock %}

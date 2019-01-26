@@ -1,0 +1,79 @@
+@font-face{
+
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/ProximaNovaBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.cadText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 10%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cadText p {
+    margin: 0;
+}
+.progText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%; 
+    font-size: 14px;
+    font-family: 'Proxima Nova';
+    color: #9b9b9b; 
+}
+.progText p {
+    margin: 0;
+    margin-left: 0px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+	-webkit-user-select: none; 
+    width: 100%;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px; 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.question p:nth-child(odd) {
+    font-family: "ProximaNova";
+    font-weight: bold;
+	font-size: 25px;
+
+}
+.question p:nth-child(even) {
+	font-family: "ProximaNova-Regular";
+	color: #9b9b9b;
+	font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#vk_comments {
+    margin-top: 50px;
+}

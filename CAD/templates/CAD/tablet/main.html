@@ -1,0 +1,134 @@
+{% extends 't_base.html' %}
+{% load static %}
+
+{% block head %}
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Главная страница</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!-- Делает масштаб страницы на мобильных устройствах равный 100% и разрешает/запрещает масштабирование -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css и JS желательно подключать перед закрывающемся тегом </body> -->
+	<link rel="stylesheet" href="{% static 'tablet/css/reset.css' %}">
+	<link href="{% static 'tablet/css/style-main.css' %}" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src='{% static "tablet/script/jquery.touchSwipe.min.js" %}'></script>
+	<script src="{% static 'tablet/script/main.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+			<section class="program">
+				<div class="program-text-wrapper">
+					<p class="program-text-1">
+						Современное обучение CAD системам
+					</p>
+					<p class="program-text-2">
+						Программа обучение подкрепленная опытом преподавателей и реальными проектами
+					</p>
+					<div class="program-but">
+						<p>Перейти к программе</p>
+					</div>	
+				</div>
+				<img src="{% static 'tablet/img/print.svg' %}" alt="" class="program-img">	
+			</section>
+			<!-- Блок "Слайдер 1" -->
+			<section class="slider-1">
+				<p class="slider-1-caption">
+					План обучения
+				</p>
+				<ul class="slider1-but-wrap">
+					<li class="slider1-but but-next">1 год</li>
+					<li class="slider1-but">2 год</li>
+					<li class="slider1-but">3 год</li>
+					<li class="slider1-but">4 год</li>
+					<li class="slider1-but">Выпуск</li>
+				</ul>
+				<div class="slide-window-1">
+					<div class="slide-window-1-wrap next-0">
+						<div class="slider1-slide">
+							<p class="slide-caption">
+								Система автоматизированного проектирования
+							</p>
+							<p class="slide-second-text">
+								Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что
+								искусство мое страдает от этого.
+							</p>
+							<div class="ico-wrap">
+								<div class="ico-1">
+									<img src="{% static 'tablet/img/diving.svg' %}" alt="" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="ico-2">
+									<img src="{% static 'tablet/img/computer.svg' %}" alt="" class="img-computer">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="ico-3">
+									<img src="{% static 'tablet/img/expanded.svg' %}" alt="" class="img-expanded">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider1-slide">
+							Страница 2
+						</div>
+						<div class="slider1-slide">
+							Страница 3
+						</div>
+						<div class="slider1-slide">
+							Страница 4
+						</div>
+						<div class="slider1-slide">
+							Страница 5
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Блок "Слайдер 2" -->
+			<section class="slider-2">
+				<p class="slider-2-caption">
+					Последние события
+				</p>
+
+				<div class="slide2-window-wrap">
+					<div class="slider2-slide">
+						<img src="{% static 'tablet/img/slider2.svg' %}" class="slide2-img">
+						<div class="slide2-text-wrap">
+							<time datetime="2014-09-25" class="slide2-time">12 декабря 2018</time>
+							<p class="slide2-caption">Worldskills Russia 2019</p>
+							<p class="slide2-text">
+								Рома чемпион, а рыбные тексты также
+								применяются для демонстрации различных
+								видовр шрифта и в разработке макетов.
+								Как правило их  содержание бессмысленно. 
+							</p>
+							<div class="slide2-but"><p>Подробнее</p></div>	
+						</div>
+					</div>
+					<div class="slider2-slide">
+						Слайд №2
+					</div>
+					<div class="slider2-slide">
+						Слайд №3
+					</div>
+					<div class="slider2-slide">
+						Слайд №4
+					</div>
+				</div>
+			</section>
+
+			<!-- Блок "Партнёры" -->
+			<section class="partner">
+				<p class="partner-caption">
+					С нами работают
+				</p>
+				<div class="partner-ico-wrap">
+					<img src="{% static 'tablet/img/autodesk.png' %}" alt="">
+					<img src="{% static 'tablet/img/ws.png' %}" alt="">
+					<img src="{% static 'tablet/img/rosteh.png' %}" alt="">
+					<img src="{% static 'tablet/img/cret.png' %}" alt="">
+				</div>	
+			</section>
+{% endblock %}

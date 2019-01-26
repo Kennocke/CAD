@@ -1,0 +1,343 @@
+@font-face{
+
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNovaBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.cadText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 10%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cadText p {
+    margin: 0;
+}
+.progText {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%; 
+    font-size: 19px;
+    font-family: 'Proxima Nova';
+    color: #9b9b9b; 
+}
+.progText p {
+    margin: 0;
+    margin-left: 0px;
+}
+
+.Plan {
+    display: flex;
+    text-align: left;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    margin-top: 30px; 
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+.Plan p {
+    margin-left: 0;
+}
+.wrap-slider {
+    /*border: 1px dotted orange;*/
+    width: 80px;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+}
+.slider {
+    height: 40px;
+    width: 100%;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    transition: transform .3s;
+    transform: translateX(0);
+    
+}
+.plus-0 {
+    transition: transform .3s;
+    transform: translateX(0); 
+}
+.plus-1 {
+    transition: transform .3s;
+    transform: translateX(-215%); 
+}
+.plus-2 {
+    transition: transform .3s;
+    transform: translateX(-420%); 
+}
+.plus-3 {
+    transition: transform .3s;
+    transform: translateX(-630%); 
+}
+.plus-4 {
+    transition: transform .3s;
+    transform: translateX(-835%); 
+}
+
+
+.year {
+    min-width: 80px;
+    color: #e3e3e3; 
+}
+.year:first-child {
+    color: #ffa900;
+    font-size: 32px;
+}
+.year:not(:first-child) {
+    margin-left: 110%;
+}
+.wrap {
+/*    display: flex;
+    align-items: stretch;*/
+   /* border: 1px dotted green;*/
+    width: 294px;
+    margin: auto;
+    overflow: hidden;
+}
+.three {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 1600px;
+    transition: transform .3s;
+    transform: translateX(0);
+}
+.three-0 {
+    transition: transform .3s;
+    transform: translateX(0);
+}
+
+.three-1 {
+    transition: transform .3s;
+    transform: translateX(-295px);
+}
+
+.three-2 {
+    transition: transform .3s;
+    transform: translateX(-590px);
+}
+
+.three-3 {
+    transition: transform .3s;
+    transform: translateX(-885px);
+}
+.three-4 {
+    transition: transform .3s;
+    transform: translateX(-1180px);	
+}
+.three-5 {
+    transition: transform .3s;
+    transform: translateX(-1475px); 
+}
+.saprText {
+/*    display: flex;
+    flex-direction: row;*/
+    width: 295px;
+/*    margin: auto;*/
+    /*margin-left: 35px;*/
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    color: #9b9b9b;
+    
+}
+.saprText p:first-child {
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    color: black;
+}
+.icons-wrap {
+    width: 310px;
+    margin: auto;
+    /*border: 1px dotted green;*/
+    overflow: hidden;
+}
+.slider-icons {
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 2000px;
+    transition: transform .3s;
+    transform: translateX(0);
+}
+.icons {
+    height: 100%;
+    width: 310px;
+    margin-top: 30px;
+    /*margin-left: 25px;*/
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform .3s;
+    transform: translateX(0);
+}
+.icon-swap-0 {
+    transition: transform .3s;
+    transform: translateX(0);    
+}
+.icon-swap-1 {
+    transition: transform .3s;
+    transform: translateX(-310px);    
+}
+.icon-swap-2 {
+    transition: transform .3s;
+    transform: translateX(-620px);    
+}
+.icon-swap-3 {
+    transition: transform .3s;
+    transform: translateX(-930px);    
+}
+.icon-swap-4 {
+    transition: transform .3s;
+    transform: translateX(-1240px);    
+}
+
+
+.icons div {
+    height: 40px;
+    margin-bottom: 40px;
+   /* border: 1px solid green;*/
+}
+.icons p {
+    line-height: 45px;
+    vertical-align: middle;
+    float: left;
+}
+/*.iconItem {
+    float: left;
+    border: 1px solid green;
+    margin-bottom: 50px;
+    font-size: 50px !important;
+}*/
+.imgs {
+    float: right;
+    height: 38px;
+    margin-right: 1px;
+}
+/* bootstrap4 tutorial*/
+
+.news {
+    display: flex;
+    text-align: left;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    font-size: 40px;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.news p {
+    margin-left: 0;
+}
+.newsItem {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: bold;
+}
+.newsItem p {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+}
+.Bitmap {
+    width: 69.7px;
+    height: 60px;
+    object-fit: contain;
+}
+.Bitmap-Copy-2 {
+    width: 67.7px;
+    height: 53px;
+    object-fit: contain;
+}
+.print {
+    width: 102px;
+    height: 60px;
+    object-fit: contain;  
+}
+.partners {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-family: 'Proxima Nova';
+    font-size: 40px;
+    font-weight: bold;
+}
+.partners p {
+    margin-top: 40px;
+    margin-left: 0%;
+}
+.partIcons {
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.partIcon1 {
+    margin-bottom: 30px;
+    
+}
+.Autodesk {
+    width: 41.8px;
+    height: 40px;
+    object-fit: contain;
+}
+.WS {
+    width: 58.4px;
+    height: 40px;
+    object-fit: contain;
+}
+.Rosteh {
+    width: 33.4px;
+    height: 40px;
+    object-fit: contain;
+}
+.CRET {
+    width: 39.9px;
+    height: 40px;
+    object-fit: contain;
+}

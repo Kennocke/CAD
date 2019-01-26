@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+    {% block head %}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'mobile/css/style-m_base.css' %}">
+ </head>
+ <body>
+  <!-- Комментарий -->
+  <div class="body-wrapper">
+    <div class="header1">
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                <label class="btn-menu" for="hmt">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </label>
+    <ul class="hidden-menu">
+        <li><a href="{% url 'post_list' %}">Главная</a></li>  
+        <li><a href="https://mospolytech.ru/index.php?pk">Абитуриентам</a></li>
+        <li><a href="{% url 'pg_page' %}">Программа обучения</a></li>
+        <li><a href="{% url 'collab_page' %}">Партнерам</a></li>  
+        <li><a href="{% url 'faq_page' %}">Вопрос-ответ</a></li>
+    </ul>
+        <a href="https://vk.com/it.mami"><div class="vkIcon"></div></a>
+        <div class="phoneNumber"></div>
+    </div>
+    <div class="mainContent">
+        {% block content %}
+        {% endblock %}
+</div>
+<footer>
+        <div class="contacts">
+            <p>московский</p>
+            <p>политех</p>
+        </div>
+
+        <div class="myNav">
+            <ul class="footerNav">
+                    <li><a href="{% url 'pg_page' %}">Программа обучения</a></li>
+                    <li><a href="{% url 'collab_page' %}">Партнёры</a></li>
+            </ul>
+        </div>
+        <div class="myNav">
+            <ul class="footerNav">
+                <li><a href="{% url 'faq_page' %}">FAQ</a></li>
+                <li><a href="http://178.128.250.128/admin/">Вход</a></li>
+            </ul>
+        </div>
+        <div class="contIcons">
+            <img src="{% static 'mobile/img/phone.svg' %}">
+            <img src="{% static 'mobile/img/vk.svg' %}">
+            <img src="{% static 'mobile/img/email.svg' %}">
+        </div>
+        <div class="polytech">
+            <p>Anthony Hattori, Московский политех, 2018</p>
+        </div>
+    </footer>
+
+ </body>
+</html>

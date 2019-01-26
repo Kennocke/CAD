@@ -1,0 +1,91 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		a:active {
+			color: black;
+		}
+		a:hover {
+			color: orange;
+		}
+	</style>
+	{% block head %}
+	{% endblock %}
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="wrapper-margin"> <!-- Обёртка для боковых отступов -->	
+
+		<header class="header">
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					<label class="btn-menu" for="hmt">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</label>
+				<div class="hidden-menu">
+					<div class="hidden-menu-wrap">
+						<p class="hidden-menu-but"><a href="{% url 'post_list' %}">Главная</a></p>
+						<p class="hidden-menu-but"><a href="{% url 'pg_page' %}">Программа обучения</a></p>
+						<p class="hidden-menu-but"><a href="{% url 'faq_page' %}">Вопрос Ответ</a></p>
+						<p class="hidden-menu-but"><a href="https://mospolytech.ru/index.php?pk">Абитуриентам</a></p>
+						<p class="hidden-menu-but"><a href="{% url 'collab_page' %}">Партнёры</a></p>
+					</div>
+				</div>
+			<ul class="vk-phone">
+				<li>+7 999 672 38 19</li>
+				<li><a href="https://vk.com/it.mami">VK</a></li>
+			</ul>
+		</header><!-- .header-->
+
+		<main class="content">
+			<!-- Блок "Программа обучения" -->
+			{% block content %}
+			{% endblock %}
+		</main><!-- .content -->
+
+	</div>
+
+</div><!-- .wrapper -->
+
+<!-- Когда приступишь к верстке, то можно добавить внутренний контейнер для боковых отступов! -->
+<footer class="footer">
+	<div class="footer-margin">
+		<div class="top-wrap">
+			<address class="footer-address">
+				<p class="phone">+7 926 477 88 16</p>
+				<p class="mail">maminastroeniepodnimi@lol.kz</p>
+				<div class="geo-wrap">
+					<img src="{% static 'tablet/img/geo.svg' %}" alt="">
+					<p class="geo-text">
+						Москва, Рижский проезд, дом 15, к 1
+					</p>
+				</div>	
+			</address>
+			<nav class="navigate">
+				<ul class="ul-navigate">
+					<li><a href="{% url 'pg_page' %}">Программа обучения</a></li>
+					<li><a href="{% url 'collab_page' %}">Партнёры</a></li>
+					<!-- <li>Форум</li> -->
+					<li><a href="{% url 'faq_page' %}">FAQ</a></li>
+					<li><a href="http://178.128.250.128/admin/">Вход</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="info-author">
+			<p>Anthony Hattori</p>
+			<p>Московский политех, 2018</p>
+		</div>
+	</div>
+</footer><!-- .footer -->
+
+</body>
+</html>

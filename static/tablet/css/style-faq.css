@@ -1,0 +1,316 @@
+html {
+	height: 100%;
+	font-family: 'ProximaNova';
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/ProximaNovaBold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+.wrapper {
+	min-width: 768px;
+	max-width: 1024px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.wrapper-margin {
+	min-width: 668px;
+	max-width: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 80px;
+	height: 20px;
+}
+
+.hidden-menu-wrap {
+	position: relative;
+	float: left;
+	width: 80%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.hidden-menu-but {
+	font-family: 'ProximaNovaBold';
+	margin-bottom: 50px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.hidden-menu {
+	position: fixed;
+	width: 768px;
+  	margin: 0;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
+	height: 170px;
+	top: 0;
+	left: -9999px;
+	transition: left .2s;
+	z-index: 2;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+
+/*Кнопка "Бургер"*/
+
+.btn-menu {
+  color: #fff;
+  background-color: #fff;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.btn-menu span {
+  display: block;
+  border-radius: 30px;
+  height: 5px;
+  background-color: #000000;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 640px;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+.vk-phone {
+	position: relative;
+	float: right;
+}
+
+/*вк и телефон в header*/
+.vk-phone li {
+	display: inline-block;
+	font-family: 'ProximaNovaBold';
+	font-size: 16px;
+	margin-left: 20px;	
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 305px;
+	overflow: hidden;
+}
+
+/*Раздел "Программа обучения"*/
+.program {
+	float: left;
+	margin-top: 115px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 220px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Обёртка для левой части раздела "Программа обучения"*/
+.program-text-wrapper {
+	min-width: 340px;
+	max-width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+/*Главная надпись раздела "Программа обучения"*/
+.program-text-1 {
+	float: left;
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+/*Серая надпись раздела "Программа обучения"*/
+.program-text-2 {
+	float: left;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: normal;
+}
+
+/*Картинка раздела "Программа обучения"*/
+.program-img {
+	width: 40%;
+	height: 100%;
+	margin-left: 40px;
+}
+
+/*Раздел "FAQ"
+-----------------------------------------------------------------------------*/
+
+.faq-section {
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.faq-first-text {
+	font-family: 'ProximaNovaBold';
+	font-size: 20px;
+	margin-bottom: 15px;
+	line-height: normal;
+}
+
+.faq-second-text {
+	font-family: 'ProximaNova';
+	font-size: 16px;
+	margin-bottom: 40px;
+	line-height: normal;
+	color: #9b9b9b;
+}
+
+/*Раздел "Виджет VK"
+-----------------------------------------------------------------------------*/
+
+.vk-widgets {
+	width: 100%;
+	float: left;
+	margin-bottom: 70px;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+/*Внешняя оболчка футера*/
+.footer {
+	margin: -305px auto 0;
+	min-width: 768px;
+	max-width: 1024px;
+	height: 305px;
+	position: relative;
+}
+
+/*Отступы по краям*/
+.footer-margin {
+	height: 305px;
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+}
+
+/*Верхняя часть футера*/
+.top-wrap {
+	height: 220px;
+}
+
+/*Блок с реквизитами*/
+.footer-address {
+	font-family: 'ProximaNova';
+	font-size: 16px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 135px;
+	width: 235px;
+}
+
+.phone {
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+}
+
+.geo-wrap img {
+	height: 30px;
+	float: left;
+	margin-right: 25px;
+}
+
+/*Панель навигации футера*/
+.navigate {
+	float: right;
+}
+
+.ul-navigate {
+	text-align: right;
+	font-family: 'ProximaNova';
+	font-size: 16px;
+}
+.ul-navigate li {
+	margin-bottom: 25px;
+}
+
+/*Блок об авторе внизу футера*/
+.info-author {
+	width: 100%;
+	position: absolute;
+	bottom: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-author p {
+	font-family: 'ProximaNovaBold';
+	font-size: 16px;
+}
+

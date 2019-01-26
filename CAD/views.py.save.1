@@ -1,0 +1,16 @@
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
+from django_user_agents.utils import get_user_agent
+from hitcount.views import HitCountDetailView
+
+def post_list(request):
+	user_agent = get_user_agent(request)
+	if user_agent.is_mobile:
+		return render(request, 'CAD/m_index.html')
+	else:
+		posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+		return render(request, 'CAD/main.html', {'posts': posts})
+
+def faq_page(request):
+	return render(request, 'CAD/FAQ.html')

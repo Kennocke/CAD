@@ -1,0 +1,19 @@
+{% extends "d_base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+	<link href="{% static 'desktop/css/style-news.css' %}" rel="stylesheet" type="text/css">
+	<meta charset="utf-8" />
+	<title>Вопрос-Ответ</title>
+{% endblock %}
+
+{% block content %}
+	<div class="main-img">
+		<img src="{{ post_news.image.url }}" class="img-news">
+	</div>
+	<div class="wrap-MainText">
+		<p class="title-p">{{ post_news.title }}</p>
+		<p class="data-p">{{ post_news.published_date }}</p>
+		<p class="text-p">{{ post_news.text|linebreaksbr }}</p>
+	</div>
+{% endblock %}

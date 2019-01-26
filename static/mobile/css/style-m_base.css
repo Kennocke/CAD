@@ -1,0 +1,204 @@
+@font-face{
+
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNovaBold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.body-wrapper {
+    /*background-color: #edeef0;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+.header1 {
+    padding-left: 35px; 
+    margin:  0 auto;
+    min-width: 320px;
+    height: 40px;
+}
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style:none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+
+  .hidden-menu li {
+    margin-top: 30px;
+  }
+  .hidden-menu-ticker {
+    display: none;
+  }
+  .btn-menu {
+    color: #fff;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    float: left;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .btn-menu span {
+    border-radius: 30px;
+    display: block;
+    height: 5px;
+    background-color: #000000;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+  }
+  .btn-menu span.first {
+    margin-top: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu {
+    left: 90%;
+  }
+  .hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+  }
+.hidden-menu li {
+    font-size: 25px;
+    height: 60px;
+}
+.hidden-menu li a { 
+    color: black;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    text-decoration: none;
+}
+.phoneNumber {
+    height: 16px;
+    width: 16px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-top: 25px;
+    float: right;
+    background: url(../img/phone.svg);
+}
+.vkIcon {
+    width: 25px;
+    height: 15px;
+    margin-right: 35px; 
+    margin-top: 25px;
+    float: right;
+    background: url(../img/vk.svg);
+}
+.mainContent {
+    width: 100%;
+    min-width: 320px;
+    padding-top: 20px; 
+}
+
+.btn {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+.buttons {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    font-size: 21px;
+    background-color: #ffa900;
+    color: white;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 0;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Proxima Nova';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 44px;
+    margin-top: 44px;
+    text-align: center;
+}
+.myNav {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-bottom: 15px;
+}
+.footerNav li { 
+    display: inline;
+}
+ul.footerNav a {
+    font-family: 'Proxima Nova';
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    width: 100%;
+    color:black;
+    margin-left: 15px;
+}
+.polytech {
+    /*display: flex;*/
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 12px;
+    width: 100%;
+    font-family: Proxima Nova;
+    font-weight: bold;
+    color: #9b9b9b;
+}
+
+.contIcons {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.contIcons img {
+    margin: 20px;
+}

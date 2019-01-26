@@ -1,0 +1,186 @@
+{% extends "d_base.html" %}
+{% load static %}
+
+{% block head %}
+	<link rel="stylesheet" href="{% static 'desktop/css/style.css' %}">
+	<meta charset="utf-8" />
+	<title>Главная страница</title>
+	<script src="{% static 'desktop/script/slider.js' %}"></script>
+{% endblock %}
+
+{% block header %}
+	<div class="content">
+		<div class="logo-content">
+			<img src="{% static 'desktop/img/main.svg' %}" class="bitmap">
+		</div>
+		<div class="content-text-wrapper">
+			<div class="main-text">
+				Современное обучение CAD системам
+			</div>
+			<div class="second-text"> 
+				<p>Программа обучения подкреплённая опытом</p>
+				<p>преподавателей и реальными проектами</p>
+			</div>
+			<div class="content-button">
+				<a href="{% url 'pg_page' %}" ><p>Подробнее</p></a>
+			</div>
+		</div>
+	</div>	
+{% endblock %}
+
+{% block content %}
+<div class="slider-wrapper">
+					<p class="title-slider">План обучения</p>
+					<div class="button-wrapper">
+						<div class="but but-1"> 1 год</div>
+						<div class="but"> 2 год</div>
+						<div class="but"> 3 год</div>
+						<div class="but"> 4 год</div>
+						<div class="but"> Выпуск </div>	
+					</div>
+					<div class='three three0'>
+						<div class="four">
+							<div class="four-text">
+								<p>Грамотный подход к составлению плана обучения</p>
+								<p>Помимо базовых предметов представлены дисциплины, которые станут основой для обучения в последующие года.</p>
+							</div>
+							<div class="four-ico-wrapper">
+								<div class="four-ico-1">
+									<img src="{% static 'desktop/img/diving.svg' %}" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="four-ico-2">
+									<img src="{% static 'desktop/img/computer.svg' %}">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="four-ico-3">
+									<img src="{% static 'desktop/img/expanded.svg' %}">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+						<div class="four">
+							<div class="four-text">
+								<p>Углубление в профессию</p>
+								<p>Основной упор на программирование и 3D-моделирование.</p>
+							</div>
+							<div class="four-ico-wrapper">
+								<div class="four-ico-1" style="margin-left: 131px; width: 196px;">
+									<img src="{% static 'desktop/img/diving.svg' %}" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="four-ico-2" style="margin-left: 228px; width: 186px;">
+									<img src="{% static 'desktop/img/computer.svg' %}">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="four-ico-3" style="margin-left: 194px; width: 224px;">
+									<img src="{% static 'desktop/img/expanded.svg' %}">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+						<div class="four">
+							<div class="four-text">
+								<p>Работа спроектами</p>
+								<p>Вы научитесь грамотно презентовать проекты и воплощать идеи в жизнь.</p>
+							</div>
+							<div class="four-ico-wrapper">
+								<div class="four-ico-1" style="margin-left: 131px;">
+									<img src="{% static 'desktop/img/diving.svg' %}" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="four-ico-2" style="margin-left: 228px;">
+									<img src="{% static 'desktop/img/computer.svg' %}">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="four-ico-3" style="margin-left: 194px;">
+									<img src="{% static 'desktop/img/expanded.svg' %}">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+						<div class="four">
+							<div class="four-text">
+								<p>Подготовка к диплому</p>
+								<p>Часть программы направленна на формирование навыков работы с технической документацией.</p>
+							</div>
+							<div class="four-ico-wrapper">
+								<div class="four-ico-1" style="margin-left: 131px;">
+									<img src="{% static 'desktop/img/diving.svg' %}" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="four-ico-2" style="margin-left: 228px;">
+									<img src="{% static 'desktop/img/computer.svg' %}">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="four-ico-3" style="margin-left: 194px;">
+									<img src="{% static 'desktop/img/expanded.svg' %}">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+						<div class="four">
+							<div class="four-text">
+								<p>ВКР</p>
+								<p>Диплом, госы и т.д.</p>
+							</div>
+							<div class="four-ico-wrapper">
+								<div class="four-ico-1" style="margin-left: 131px;">
+									<img src="{% static 'desktop/img/diving.svg' %}" class="img-diving">
+									<p>Углубление в профессию</p>
+								</div>
+								<div class="four-ico-2" style="margin-left: 228px;">
+									<img src="{% static 'desktop/img/computer.svg' %}">
+									<p>Знакомство с новым ПО</p>
+								</div>
+								<div class="four-ico-3" style="margin-left: 194px;">
+									<img src="{% static 'desktop/img/expanded.svg' %}">
+									<p>Работа с реальными кейсами</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="title-slider2">Последние события</p>
+				<div class="slider-wrapper-second">
+					<div class="slider-part-left">
+						<div class="slider-window-wrapper">
+							<div class="slider-window slide-0">
+								{% for post in posts %}
+									<div class="news">
+										<div class="news-left">
+											<p>{{ post.published_date }}</p>
+											<p>{{ post.title }}</p>
+											<p>{{ post.text|linebreaksbr|truncatewords:50 }}</p>
+										</div>
+										<!-- {% if post.image %} -->
+											<img src="{{ post.image.url }}" class="img-slider2">
+										<!-- {% endif %} -->
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="button-panel">
+							<img src="{% static 'desktop/img/backArrowEnd.svg' %}" class="button-prev">
+							<img src="{% static 'desktop/img/frontArrow.svg' %}" class="button-next">
+							<a href="" class="button-more-a"><div class="button-more"><p class="button-more-p">Подробнее</p></div></a>
+						</div>
+					</div>
+					{% if posts.image %}
+					<img src="{{ MEDIA_URL }}{{ posts.image.url }}" class="img-slider2">
+					{% endif %}
+				</div>
+				<p class="title-partners">С нами работают</p>
+				<div class="partners-wrapper">
+					<img src="{% static 'desktop/img/autodesk.png' %}" class="partners-img1">
+					<img src="{% static 'desktop/img/ws.png' %}" class="partners-img2">
+					<img src="{% static 'desktop/img/rosteh.png' %}" class="partners-img3">
+					<img src="{% static 'desktop/img/cret.png' %}" class="partners-img4"> 
+				</div>
+				<p class="title-manufacturing">Собственное производство</p>
+				<div class="wrapper-manufacturing">
+					<p>Отдел студентов-умняшек за спасибо сделает вам готовый бизнес. Проснувшись однажды утром</p>
+					<p>послебеспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</p>
+				</div>
+				<div class="but-accept"><p>Подать заявку</p></div>	
+{% endblock %}

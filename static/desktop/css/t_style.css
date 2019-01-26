@@ -1,0 +1,467 @@
+html {
+	height: 100%;
+	font-family: 'ProximaNova';
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('../fonts/ProximaNovaBold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+.wrapper {
+	min-width: 768px;
+	max-width: 1024px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.wrapper-margin {
+	min-width: 668px;
+	max-width: 100%;
+	margin-left: 50px;
+	margin-right: 50px;
+	min-height: 100%;
+	height: auto;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 80px;
+	height: 20px;
+}
+
+/*вк и телефон в header*/
+.vk-phone li {
+	display: inline-block;
+	font-family: 'ProximaNovaBold';
+	font-size: 16px;
+	margin-left: 20px;	
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 305px;
+	overflow: hidden;
+}
+
+/*Раздел "Программа обучения"*/
+.program {
+	float: left;
+	margin-top: 115px;
+	width: 100%;
+	height: 220px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Обёртка для левой части раздела "Программа обучения"*/
+.program-text-wrapper {
+	min-width: 340px;
+	max-width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+/*Главная надпись раздела "Программа обучения"*/
+.program-text-1 {
+	float: left;
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+/*Серая надпись раздела "Программа обучения"*/
+.program-text-2 {
+	float: left;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: normal;
+}
+
+/*Кнопка раздела "Программа обучения"*/
+.program-but {
+	position: absolute;
+	bottom: 0px;
+	background-color: #ffa900;
+	width: 250px;
+	height: 50px;
+	border-radius: 10px;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.program-but p {
+	color: #ffffff;
+	font-style: 'ProximaNovaBold';
+	font-size: 16px;
+}
+
+/*Картинка раздела "Программа обучения"*/
+.program-img {
+	width: 40%;
+	height: 100%;
+}
+
+/*Слайдер №1
+---------------------------------------------------------*/
+
+/*Раздел "Слайдер 1"*/
+.slider-1 {
+	position: relative;
+	float: left;
+	height: 490px;
+	width: 100%;
+	margin-top: 140px;
+}
+
+/*Жирная надпись*/
+.slider-1-caption {
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+	float: left;
+	width: 100%;
+}
+
+/*Обёртка для блока с кнопками*/
+.slider1-but-wrap {
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	float: left;
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+/*Кнопки для первого слайдера*/
+.slider1-but-wrap li {
+	display: inline-block;
+	font-family: "ProximaNovaBold";
+	font-size: 30px;
+}
+
+/*Выделение кнопки слайдера*/
+.but-next {
+	transition: 0.5s;
+	font-size: 40px;
+	color: orange;
+}
+
+/*Окно отображения слайдов*/
+.slide-window-1 {
+	height: 300px;
+	position: relative;
+	float: left;
+}
+
+/*Обёртка для блока, который перемещается*/
+.slide-window-1-wrap {
+	height: 300px;
+	min-width: 5000px;
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+	transition: transform .3s;
+    transform: translateX(0);
+}
+
+/*Блоки для переключения слайдера*/
+.next-0 {
+	transition: transform .3s;
+}
+.next-1 {
+	transition: transform .3s;
+}
+
+.next-2 {
+	transition: transform .3s;	
+}
+
+.next-3 {
+	transition: transform .3s;	
+}
+
+.next-4 {
+	transition: transform .3s;
+}
+/*Конец блоков*/
+
+/*Слайд*/
+.slider1-slide {
+	width: 768px;
+	height: 300px;
+	position: relative;
+}
+
+/*Заголовок слайда*/
+.slide-caption {
+	font-family: 'ProximaNovaBold';
+	font-size: 20px;
+	float: left;
+}
+
+/*Серый текст на слайде*/
+.slide-second-text {
+	font-size: 16px;
+	margin-top: 25px;
+	color: #9b9b9b;
+	float: left;
+}
+
+/*Обёртка для иконок*/
+.ico-wrap {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*сами иконки на слайдере*/
+.ico-wrap img {
+	height: 45px;
+	margin-bottom: 50px;
+}
+
+/*Блоки с иконками*/
+.ico-1, .ico-2, .ico-3 {
+	display: flex;
+	flex-direction: column;
+	font-family: 'ProximaNovaBold';
+	font-size: 14px;
+}
+
+/*Слайдер №2
+---------------------------------------------------------*/
+
+/*Обёртка для блока "Слайдер 2"*/
+.slider-2 {
+	float: left;
+	position: relative;
+	margin-top: 100px;
+	height: 580px;
+	width: 100%;
+}
+
+/*Заголовок второго слайдера*/
+.slider-2-caption {
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+/*Движущаяся часть слайдера*/
+.slide2-window-wrap {
+	float: left;
+	display: flex;
+	min-width: 9999px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	transition: transform .3s;
+    transform: translateX(0);
+}
+
+/*Слайд второго слайдера*/
+.slider2-slide {
+	height: 500px;
+	width: 350px;
+	position: relative;
+	margin-left: 80px;
+	border-radius: 15px;
+  	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+	padding-left: 20px;
+}
+
+/*Картинка на слайде*/
+.slider2-slide img {
+	float: right;
+	border-radius: 0 15px 0 0;
+	width: 80%;
+}
+
+/*Обёртка для текста на слайде*/
+.slide2-text-wrap {
+	float: right;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/*Дата и время на слайде*/
+.slide2-time {
+	color:#9b9b9b;
+}
+
+/*Заголовок на слайде*/
+.slide2-caption {
+	font-family: 'ProximaNovaBold';
+	font-size: 20px;
+}
+
+/*Основной текст на слайде*/
+.slide2-text {
+	font-size: 14px;
+	color: #9b9b9b;
+}
+
+/*Кнопка на слайде*/
+.slide2-but {
+	background-color: #ffa900;
+	width: 170px;
+	height: 50px;
+	border-radius: 10px;
+	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide2-but p {
+	color: #ffffff;
+	font-family: 'ProximaNovaBold';
+	font-size: 16px;
+}
+
+/*Для скрола слайдера*/
+.next-2 {
+	transition: transform .3s;
+}
+
+/*Блок "Партнёры"
+---------------------------------------------------------*/
+
+/*Раздел "Партнёры"*/
+.partner {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+/*Заголовок раздела*/
+.partner-caption {
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+}
+
+/*Обёртка для иконок партнёров*/
+.partner-ico-wrap {
+	margin-top: 55px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Размер иконок партнёров*/
+.partner-ico-wrap img {
+	height: 70px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+
+/*Внешняя оболчка футера*/
+.footer {
+	margin: -305px auto 0;
+	min-width: 768px;
+	max-width: 1024px;
+	height: 305px;
+	position: relative;
+}
+
+/*Отступы по краям*/
+.footer-margin {
+	height: 305px;
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+}
+
+/*Верхняя часть футера*/
+.top-wrap {
+	height: 220px;
+}
+
+/*Блок с реквизитами*/
+.footer-address {
+	font-family: 'ProximaNova';
+	font-size: 16px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 135px;
+	width: 235px;
+}
+
+.phone {
+	font-family: 'ProximaNovaBold';
+	font-size: 30px;
+}
+
+.geo-wrap img {
+	height: 30px;
+	float: left;
+	margin-right: 25px;
+}
+
+/*Панель навигации футера*/
+.navigate {
+	float: right;
+}
+
+.ul-navigate {
+	text-align: right;
+	font-family: 'ProximaNova';
+	font-size: 16px;
+}
+.ul-navigate li {
+	margin-bottom: 25px;
+}
+
+/*Блок об авторе внизу футера*/
+.info-author {
+	width: 100%;
+	position: absolute;
+	bottom: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-author p {
+	font-family: 'ProximaNovaBold';
+	font-size: 16px;
+}
+

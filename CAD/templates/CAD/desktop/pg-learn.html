@@ -1,0 +1,29 @@
+{% extends "d_base.html" %}
+{% load static %}
+
+{% block head %}
+	<link rel="stylesheet" href="{% static 'desktop/css/style.css' %}">
+	<meta charset="utf-8" />
+	<title>Программа обучения</title>
+	<script src="{% static 'desktop/script/slider.js' %}"></script>
+{% endblock %}
+
+{% block header %}
+	<div class="content">
+		<div class="logo-content">
+			<img src="{% static 'desktop/img/3-d.svg' %}" class="bitmap">
+		</div>
+		<div class="content-text-wrapper">
+			<div class="main-text">
+				Программа обучения
+			</div>
+			<div class="second-text"> 
+				<p>Плодотворная работа между предприятиями и</p>
+				<p>студентами Политеха</p>
+			</div>
+			<div class="content-button">
+				<p>Скачать PDF</p>
+			</div>
+		</div>
+	</div>	
+{% endblock %}
